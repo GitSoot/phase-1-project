@@ -1,0 +1,8 @@
+# READY MEALS FOR YOU
+
+Simplify your meal planning with recipes from our dish vault
+## Project Description
+
+The application allows users to input an ingredient into the search bar. It return a recipe that contains the ingredient. If no recipe is available, the application notifies the user. 
+
+## How to Use
