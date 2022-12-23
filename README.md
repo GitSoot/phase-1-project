@@ -5,6 +5,8 @@ Simplify your meal planning with recipes from our dish vault
 
 The application allows users to input an ingredient into the search bar. It return a recipe that contains the ingredient. If no recipe is available, the application notifies the user. 
 
+Users also have the option of having a random recipe presented to them by clikcking "Feeling Luck", which is our random meal generator. 
+
 ## How to Use
 1. Access the recipe on your device 
 2. Input the ingredient you have
