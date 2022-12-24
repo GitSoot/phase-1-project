@@ -8,6 +8,11 @@ body {
     justify-items: center;
 }
 
+#title {
+  display: flex;
+  flex-direction: column;
+}
+
 img {
     margin: auto;
 }
