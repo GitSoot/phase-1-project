@@ -88,3 +88,15 @@ img {
   flex-direction: row;
   border: 3px double #ff6550;
 }
+
+.columnone {
+  display: flex;
+  flex-direction: column;
+  border: 3px groove #7f50ff;
+}
+
+.columntwo {
+  display: flex;
+  flex-direction: column;
+  border: 3px groove #fd50ff;
+}
