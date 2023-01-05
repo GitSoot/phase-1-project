@@ -87,16 +87,23 @@ img {
   display: flex;
   flex-direction: row;
   border: 3px double #ff6550;
+  margin: 10px;
+  padding: 5px;
 }
 
 .columnone {
   display: flex;
   flex-direction: column;
   border: 3px groove #7f50ff;
+  margin: 10px;
+  padding: 5px;
 }
 
 .columntwo {
   display: flex;
   flex-direction: column;
   border: 3px groove #fd50ff;
+  margin: 10px;
+  padding: 5px;
 }
+
