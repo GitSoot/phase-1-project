@@ -82,3 +82,9 @@ img {
   box-shadow: inset 0px 1px 0px 0px #ffffff;
   background-color: transparent;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  border: 3px double #ff6550;
+}
