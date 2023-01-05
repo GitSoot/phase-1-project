@@ -3,9 +3,9 @@ body {
 }
 
 #headline {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
 #title {
@@ -14,7 +14,7 @@ body {
 }
 
 img {
-    margin: auto;
+  margin: auto;
 }
 
 #general {
@@ -28,15 +28,15 @@ img {
 }
 
 #search-bar {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
 #random {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
 #searchbtn {
