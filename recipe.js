@@ -40,8 +40,8 @@ const createMeal = (meal) => {
 		</div>
 		${meal.strYoutube ? `
 		<div class="row">
-			<h5>Video Recipe</h5>
-			<div class="videoWrapper">
+			<div class="video" style="text-align: center;">
+            <h3>Video Recipe</h3>
 				<iframe width="420" height="315"
 				src="https://www.youtube.com/embed/${meal.strYoutube.slice(-11)}">
 				</iframe>
