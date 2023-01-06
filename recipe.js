@@ -1,5 +1,31 @@
 const randomRecipe = document.getElementById("randomRecipe");
 const displayRecipe = document.getElementById("display-recipe");
+const searchbtn = document.getElementById("searchbtn");
+
+searchbtn.addEventListener("click", () => {
+  let foodsearch = document.getElementById("foodsearch").value.trim();
+  fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${foodsearch}`)
+    .then((res) => res.json())
+    .then((res) => {
+      let html = "";
+      if (res.meals) {
+        res.meals.forEach((meal) => {
+          html += `
+                    <div class = "row">
+                        <div class = "columntwo">
+                        <h3>${meal.strMeal}</h3>
+                            <img src = "${meal.strMealThumb}" height="200" width="200">
+                        </div>
+                    </div>
+                `;
+        });
+      } else {
+        html = "Sorry, we didn't find any meal. Try Feeling Lucky!";
+      }
+
+      displayRecipe.innerHTML = html;
+    });
+});
 
 randomRecipe.addEventListener("click", () => {
   fetch("https://www.themealdb.com/api/json/v1/1/random.php")
