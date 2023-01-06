@@ -1,7 +1,9 @@
+//Variables 
 const randomRecipe = document.getElementById("randomRecipe");
 const displayRecipe = document.getElementById("display-recipe");
 const searchbtn = document.getElementById("searchbtn");
 
+//Event listeners + function for food search
 searchbtn.addEventListener("click", () => {
   let foodsearch = document.getElementById("foodsearch").value.trim();
   fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${foodsearch}`)
@@ -27,6 +29,7 @@ searchbtn.addEventListener("click", () => {
     });
 });
 
+//Random recipe search
 randomRecipe.addEventListener("click", () => {
   fetch("https://www.themealdb.com/api/json/v1/1/random.php")
     .then((res) => res.json())
@@ -35,6 +38,7 @@ randomRecipe.addEventListener("click", () => {
     });
 });
 
+//Display meal function 
 const createMeal = (meal) => {
   const ingredients = [];
   // Get ingredients
